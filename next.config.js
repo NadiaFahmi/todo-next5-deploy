@@ -7,5 +7,13 @@ module.exports = {
   productionBrowserSourceMaps: true 
 }
 
+module.exports = {
+  env: {
+    customKey: process.env.NEXT_PUBLIC_MONGO_URL, // pulls from .env file
+  },
+  
+}
+
+
 
 
