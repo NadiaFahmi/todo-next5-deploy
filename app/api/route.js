@@ -1,4 +1,5 @@
 import { ConnectDB } from "@/lib/config/db";
+// import { connectToDatabase } from "@/lib/config/db";
 import { NextResponse } from "next/server";
 import TodoModel from "@/lib/models/todoModel";
 
@@ -7,9 +8,18 @@ import TodoModel from "@/lib/models/todoModel";
 
 const LoadDB = async ()=>{
   await ConnectDB();
+  // await connectToDatabase()
 }
 
 LoadDB();
+
+// In your Next.js code
+import { MongoClient } from 'mongodb';
+
+const uri = process.env.MONGODB_URI;
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
+// ...
 
 
 export async function POST(request){

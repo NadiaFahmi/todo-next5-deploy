@@ -69,6 +69,7 @@ export default function Home() {
         title:"",
         description:""
       })
+      
 
     }catch(error){
       toast.error("Error")
@@ -118,7 +119,7 @@ export default function Home() {
                 Description
               </th>
               <th scope="col" className="px-6 py-3">
-                Status
+                Status now
               </th>
               <th scope="col" className="px-6 py-3">
                 Action
@@ -148,3 +149,7 @@ export default function Home() {
     </>
   );
 }
+
+
+
+
