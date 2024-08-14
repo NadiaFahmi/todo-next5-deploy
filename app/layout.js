@@ -28,3 +28,4 @@ export default function RootLayout({ children }) {
   );
 }
 
+//npm install @vercel/otel @opentelemetry/sdk-logs @opentelemetry/api-logs @opentelemetry/instrumentation
